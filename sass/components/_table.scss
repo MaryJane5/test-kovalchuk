@@ -1,0 +1,149 @@
+.table-panel {
+    position: relative;
+    background: $white;
+    border: 1px solid #DDDDDD;
+    box-sizing: border-box;
+    border-radius: 2px 2px 0px 0px;
+    margin: 30px 0;
+
+    &:after {
+        position: absolute;
+        content: " ";
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 7px;
+        background-color: #B6E0F8;
+    }
+}
+
+.table-panel__title {
+    font-size: 12px;
+    font-family: $second-font-sans-serif;
+    color: #333;
+    opacity: 0.6;
+    text-transform: uppercase;
+    border-bottom: 1px solid #DDDDDD;
+    padding: 10px 25px;
+}
+
+.table-wrapper {
+    margin: 20px 25px;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+    border: 1px solid #EAEAEA;
+
+    th {
+        width: 100px;
+        padding: 13px 16px;
+        background-color: #62BDB5;
+        color: $white;
+        font-weight: 500;
+        border: 2px solid #62BDB8;
+
+        &:nth-child(3n) {
+            text-align: center;
+        }
+
+        &:last-child {
+            text-align: right;
+        }
+    }
+
+    tr {
+        &.error {
+            border-left: 2px solid $red;
+
+            .icon-attention {
+                display: block;
+                color: $red;
+            }
+
+        }
+    }
+
+    td {
+        padding: 10px 16px;
+        border-bottom: 1px solid #EAEAEA;
+
+        &:nth-child(3n) {
+            text-align: center;
+        }
+
+        &:last-child {
+            text-align: right;
+        }
+    }
+
+    .icon-attention {
+        display: none;
+    }
+
+    .icon-visible-open,
+    .icon-file {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        border: 1px solid #999999;
+        border-radius: 4px;
+        margin: 0 5px;
+    }
+
+}
+
+// btn-table
+.btn-sort {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 20px 0 0;
+
+    &:before,
+    &:after {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        font-family: 'icomoon';
+    }
+
+    &.btn-sort-by-attr {
+        &:before {
+            content: "\e90d";
+            margin: -2px 0 0;
+            content: "\e90d";
+            right: 6px;
+            opacity: 0.5;
+        }
+    }
+
+    &.btn-sort-by-date {
+        &:before {
+            content: "\e90c";
+        }
+    }
+
+    &.btn-sort-by-attr {
+        &:after {
+            content: "\e910";
+            opacity: 0.5;
+        }
+    }
+}
+
+#number {
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    box-sizing: border-box;
+    box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.07);
+    border-radius: 4px;
+    height: 33px;
+    width: 70px;
+    text-align: center;
+    margin: 0 25px 0 0;
+}

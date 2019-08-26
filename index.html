@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>test</title>
+    <meta charset="UTF-8">
+    <meta name=description content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700Roboto:400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/main.min.css">
+</head>
+
+<body>
+    <header class="header">
+    </header>
+    <main class="main">
+        <div id="wrapper">
+            <div class="panel">
+                <div class="panel__sidebar">
+                    <div class="panel__header">
+                        <button class="btn-show-panel-content icon-left-arrow"></button>
+                        <a href="#" class="logo"><img src="images/content/logo.svg" alt="MyDoctor" width="122" height="24"></a>
+                    </div>
+                    <nav class="panel-navigation">
+                        <button class="panel-navigation__btn"><i class="icon-display"></i>RPM</button>
+                        <ul class="panel-navigation__dropdown">
+                            <li class="active"><a href="#">All cases</a></li>
+                            <li><a href="#">Patients</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="panel-content">
+                    <div class="table-panel">
+                        <div class="table-panel__title">Under review cases</div>
+                        <div class="table-wrapper">
+                            <table>
+                                <tr>
+                                    <th><button class="btn-sort btn-sort-by-attr">Name</button></th>
+                                    <th><button class="btn-sort btn-sort-by-date">Date created</button></th>
+                                    <th>Alert</th>
+                                    <th>Action</th>
+                                </tr>
+                                <tr class="error">
+                                    <td>Ann Yahui</td>
+                                    <td><time datetime="2019-07-03">Mon 3 Jun</time></td>
+                                    <td><i class="icon-attention"></i></td>
+                                    <td><i class="icon-visible-open"></i><i class="icon-file"></i>
+                                    </td>
+                                </tr>
+                                <tr class="error">
+                                    <td>Alma Malmberg</td>
+                                    <td><time datetime="2019-07-03">Tue 4 Jun</time></td>
+                                    <td><i class="icon-attention"></i></td>
+                                    <td><i class="icon-visible-open"></i><i class="icon-file"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Justine Marshall</td>
+                                    <td><time datetime="2019-07-03">Thu 6 Jun</time></td>
+                                    <td><i class="icon-attention"></i></td>
+                                    <td><i class="icon-visible-open"></i><i class="icon-file"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Gopichand Sana</td>
+                                    <td><time datetime="2019-07-03">Thu 6 Jun</time></td>
+                                    <td><i class="icon-attention"></i></td>
+                                    <td><i class="icon-visible-open"></i><i class="icon-file"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Lucy Miller</td>
+                                    <td><time datetime="2019-07-03">Wed 5 Jun</time></td>
+                                    <td><i class="icon-attention"></i></td>
+                                    <td><i class="icon-visible-open"></i><i class="icon-file"></i></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="table-panel">
+                        <div class="table-panel__title">Under review cases</div>
+                        <div class="table-wrapper">
+                            <table>
+                                <tr>
+                                    <th><button class="btn-sort btn-sort-by-attr">Name</button></th>
+                                    <th><button class="btn-sort btn-sort-by-date">Date created</button></th>
+                                    <th><button class="btn-sort btn-sort-by-attr">Date closed</button></th>
+                                    <th>Action</th>
+                                </tr>
+                                <tr>
+                                    <td>Georges Embolo</td>
+                                    <td><time datetime="2019-07-03">Thu 30 May</time></td>
+                                    <td><time datetime="2019-07-03">Mon 3 Jun</time></td>
+                                    <td><i class="icon-file"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Mkhuseli Malinga</td>
+                                    <td><time datetime="2019-07-03">Tue 28 May</time></td>
+                                    <td><time datetime="2019-07-03">Wed 29 May</time></td>
+                                    <td><i class="icon-file"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Núria Moura</td>
+                                    <td><time datetime="2019-07-03">Tue 28 May</time></td>
+                                    <td><time datetime="2019-07-03">Wed 29 May</time></td>
+                                    <td><i class="icon-file"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Shinohara Ryoma</td>
+                                    <td><time datetime="2019-07-03">Sun 26 May</time></td>
+                                    <td><time datetime="2019-07-03">Wed 29 May</time></td>
+                                    <td><i class="icon-file"></i>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="filter-page">
+                            <input id="number" type="number" value="10">
+                            <ul class="pagination">
+                                <li class="prev"><a href="#" class="icon-angle-double-left"></a></li>
+                                <li class="active-page"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li class="next"><a href="#" class="icon-angle-double-right"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="user-panel">
+                <li><button class="user-mail icon-message"></button></li>
+                <li>
+                    <div class="notification">
+                        <button class="notificatiov-btn icon-notification new-notification"></button>
+                        <div class="notification-popup">
+                            <strong class="notification-popup__title">Notifications</strong>
+                            <ul class="list-notification">
+                                <li>
+                                    <a href="#" class="new-notification">
+                                        <i class="icon-rod"></i>
+                                        <div class="list-notificatiov__description">
+                                            <strong class="list-notificatiov__title">Outreach case</strong>
+                                            <p>We have not received readings from Alma Malmberg in at least 24 hours</p>
+                                            <time datetime="2019-05-06">1 min ago</time>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="new-notification">
+                                        <i class="icon-customer-service"></i>
+                                        <div class="list-notificatiov__description">
+                                            <strong class="list-notificatiov__title">Intervention case</strong>
+                                            <p>We have received additional out of range alert notifications for Justine Marshall</p>
+                                            <time datetime="2019-05-06">49 min ago</time>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-customer-service"></i>
+                                        <div class="list-notificatiov__description">
+                                            <strong class="list-notificatiov__title">Intervention case</strong>
+                                            <p>We have received additional out of range alert notifications for Justine Marshall</p>
+                                            <time datetime="2019-05-06">1 min ago</time>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="user-data">
+                        <div class="user-photo">
+                            <img src="images/content/user-photo.png" alt="">
+                        </div>
+                        <div class="user-name">ann_bing</div>
+                        <button class="btn-setings icon-play-button"></button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer class="footer">
+    </footer>
+    <script src="assets/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+.pagination {
+    @extend %listreset;
+
+    display: flex;
+    justify-content: flex-end;
+
+    li {
+        width: 33px;
+        height: 33px;
+        border: 1px solid #DDDDDD;
+        margin: 0 -1px 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &.active,
+        &:hover {
+            background-color: #62bdb8;
+            cursor: pointer;
+
+            a {
+                color: $white;
+            }
+        }
+
+        a {
+            display: block;
+            color: $gray;
+        }
+
+        &.prev {
+            border-radius: 4px 0 0 4px;
+
+        }
+
+        &.next {
+            border-radius: 0 4px 4px 0;
+        }
+
+        &.prev,
+        &.next {
+            &:hover {
+                background-color: $white;
+
+                a {
+                    color: #62bdb8;
+                }
+            }
+        }
+    }
+}
